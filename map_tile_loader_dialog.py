@@ -58,12 +58,14 @@ headers = {
 out_format = 'jpeg'
 
 dict_sources = {
+    "IGN":{"url":"https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/png&TileMatrix={2}&TileCol={0}&TileRow={1}", "zmax":18},
     "Google BaseMap": {"url":"https://mt1.google.com/vt/lyrs=m&x={0}&y={1}&z={2}", "zmax":21},
     "Google Terrain": {"url":"https://mt1.google.com/vt/lyrs=p&x={0}&y={1}&z={2}", "zmax":20},
     "Google Traffic": {"url":"https://mt1.google.com/vt?lyrs=h@159000000,traffic|seconds_into_week:-1&style=3&x={0}&y={1}&z={2}", "zmax":20},
     "Google Satellite": {"url":"https://khms0.google.com/kh/v=923?x={0}&y={1}&z={2}", "zmax":20},
     "Google Hybrid": {"url":"https://mt1.google.com/vt/lyrs=y&x={0}&y={1}&z={2}", "zmax":20},
     "OSM": {"url":"http://tile.openstreetmap.org/{2}/{0}/{1}.png", "zmax":19},
+    "HOT OSM": {"url":"http://a.tile.openstreetmap.fr/hot/{2}/{0}/{1}.png", "zmax":19},
     "ESRI BaseMap": {"url":"https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{2}/{1}/{0}", "zmax":20},
     "ESRI Terrain": {"url":"https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{2}/{1}/{0}", "zmax":20},
     "ESRI Satellite": {"url":"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{2}/{1}/{0}", "zmax":20},
